@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* styles.css */
+
+/* Ajustes generales */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header .logo {
+    width: 100px; /* Ajusta el tamaño del logotipo según sea necesario */
+}
+
+/* Barra Lateral */
+aside h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+aside .nav-link {
+    color: #007bff; /* Color de los enlaces */
+    margin-bottom: 0.5rem;
+}
+
+aside .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Sección de Contenido Principal */
+main h2 {
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+main article h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main article p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Estilos para el párrafo dentro del pie de página */
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Estilos para el enlace dentro del pie de página */
+footer a {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    display: inline-block;
+}
+
+/* Efecto hover para el enlace dentro del pie de página */
+footer a:hover {
+    text-decoration: underline;
+}
