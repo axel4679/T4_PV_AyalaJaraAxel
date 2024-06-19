@@ -1,0 +1,71 @@
+
+
+/* styles.css */
+
+/* Ajustes generales */
+body {
+    font-family: 'Arial', sans-serif;
+}
+header {
+    color:  #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px 0; /* Padding superior e inferior */
+}
+header .logo {
+    width: 100px; /* Ajusta el tamaño del logotipo según sea necesario */
+}
+
+
+.navbar-custom {
+    background-color: #003366; /* Azul oscuro */
+}
+
+/* Sección de Contenido Principal */
+main h2 {
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+header ul li a h5 {
+	text-decoration: none;
+	color: red;
+}
+nav {
+	background-color: blue; /* Fondo azul */
+}
+div.container-fluid{
+	background-color: blue; /* Fondo azul */
+}
+
+main p {
+	
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+main article h5 {
+	text-align: center; /* Texto centrado */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main article p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: blue; /* Fondo azul */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px 0; /* Espaciado interno (padding) */
+    position: fixed; /* Fijar el footer al fondo de la página */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Alineación al fondo */
+}
+
+footer p {
+    margin: 0; /* Sin margen en los párrafos */
+    padding: 5px; /* Espaciado interno en los párrafos */
+}
