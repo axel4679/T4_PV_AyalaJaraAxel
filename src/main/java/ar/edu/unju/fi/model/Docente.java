@@ -4,25 +4,24 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Docente {
-	
 	private String legajo;
-    private String nombre;
-    private String apellido;
-    private String email;
-    private int telefono;
-    private String foto;
+	private String nombre;
+	private String apellido;
+	private String email;
+	private String telefono;
+	private Boolean estado;
 	
 	public Docente() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Docente(String legajo, String nombre, String apellido, String email, int telefono, String foto) {
+	public Docente(String legajo, String nombre, String apellido, String email, String telefono, Boolean estado) {
 		this.legajo = legajo;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.email = email;
 		this.telefono = telefono;
-		this.foto = foto;
+		this.estado = estado;
 	}
 
 	public String getLegajo() {
@@ -57,22 +56,21 @@ public class Docente {
 		this.email = email;
 	}
 
-	public int getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
 
-	public void setTelefono(int telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 
-	public String getFoto() {
-		return foto;
+	public Boolean getEstado() {
+		return estado;
 	}
 
-	public void setFoto(String foto) {
-		this.foto = foto;
+	public void setEstado(Boolean estado) {
+		this.estado = estado;
 	}
-	
-	
+
 	
 }

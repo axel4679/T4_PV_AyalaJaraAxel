@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+ <link rel="stylesheet" href="/css/styles.css">
+<title>Formulario Docentes</title>
+</head>
+<body>
+	<div data-th-replace="~{fragments/fragmentos :: header}"></div>
+	<div data-th-replace="~{fragments/fragmentos :: navbar}"></div>
+	<div class="container">
+		<h1>FORMULARIO DOCENTE</h1>
+		<form th:object="${nuevoDocente}" 
+		th:action="${band}?@{/modificarDocente}:@{/guardarDocente}" 
+		method="post">
+			<div class="col-sm-6">
+				<label for="legajo" class="form-label">Legajo</label> 
+				<input type="text" class="form-control"	id="legajo" th:field="*{legajo}" th:readonly="${band}">				
+			</div>
+			
+			<div class="col-sm-6">
+				<label for="nombre" class="form-label">Nombre</label>
+				<input type="text" class="form-control"	id="nombre" th:field="*{nombre}">
+			</div>
+			
+			<div class="col-sm-6">
+				<label for="apellido" class="form-label">Apellido</label>
+				<input type="text" class="form-control" id="apellido" th:field="*{apellido}">
+			</div>
+
+			<div class="col-sm-6">
+				<label for="email" class="form-label">Email</label>
+				<input type="email" class="form-control" id="email" th:field="*{email}">
+			</div>
+
+			<div class="col-sm-6">
+				<label for="telefono" class="form-label">Telefono</label>
+				<input type="text" class="form-control" id="telefono" th:field="*{telefono}">
+			</div>
+
+			<button type="submit" class="btn btn-primary">Guardar Docente</button>
+		</form>
+		
+	</div>
+<div th:replace="fragments/fragmentos :: footer"></div>
+	<script th:src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
