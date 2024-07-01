@@ -1,42 +1,43 @@
 package ar.edu.unju.fi.model;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 import org.springframework.stereotype.Component;
+
+
 @Component
 public class Alumno {
-	private int dni;
+    private String dni;
     private String nombre;
     private String apellido;
     private String email;
-    private long telefono;
-    private LocalDate fechaNacimiento;
+    private String telefono;
+    private Date fechaNacimiento;
     private String domicilio;
     private String LU;
-    private String foto;
-	
+    private Boolean estado;
+    
     public Alumno() {
-		// TODO Auto-generated constructor stub
-	}
+    	
+    }
 
-	public Alumno(int dni, String nombre, String apellido, String email, long telefono, LocalDate fechaNacimiento,
-			String domicilio, String lU, String foto) {
-		this.dni = dni;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.email = email;
-		this.telefono = telefono;
-		this.fechaNacimiento = fechaNacimiento;
-		this.domicilio = domicilio;
-		LU = lU;
-		this.foto = foto;
-	}
+    public Alumno(String dni, String nombre, String apellido, String email, String telefono, Date fechaNacimiento, String domicilio, String LU, Boolean estado) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.telefono = telefono;
+        this.fechaNacimiento = fechaNacimiento;
+        this.domicilio = domicilio;
+        this.LU = LU;
+        this.estado = estado;
+    }
 
-	public int getDni() {
+	public String getDni() {
 		return dni;
 	}
 
-	public void setDni(int dni) {
+	public void setDni(String dni) {
 		this.dni = dni;
 	}
 
@@ -64,19 +65,19 @@ public class Alumno {
 		this.email = email;
 	}
 
-	public long getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
 
-	public void setTelefono(long telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 
-	public LocalDate getFechaNacimiento() {
+	public Date getFechaNacimiento() {
 		return fechaNacimiento;
 	}
 
-	public void setFechaNacimiento(LocalDate fechaNacimiento) {
+	public void setFechaNacimiento(Date fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 
@@ -96,14 +97,14 @@ public class Alumno {
 		LU = lU;
 	}
 
-	public String getFoto() {
-		return foto;
+	public Boolean getEstado() {
+		return estado;
 	}
 
-	public void setFoto(String foto) {
-		this.foto = foto;
+	public void setEstado(Boolean estado) {
+		this.estado = estado;
 	}
-    
-    
+
     
 }
+
